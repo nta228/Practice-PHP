@@ -19,10 +19,4 @@ if($fullname != '' && $age != ''&& $address != '' && $telephone != ''){
 	         values ("'.$fullname.'", "'.$age.'","'.$address.'","'.$telephone.'")';
         execute($sql);
     }
-}
-if(isset($_GET['id'])){
-    $delete_id = $_GET['id'];
-    $sql = 'delete from student  where id = ' .$delete_id;
-    execute($sql);
-}
 ?>
